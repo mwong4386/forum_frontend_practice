@@ -1,0 +1,23 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0;
+  background: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular",
+    sans-serif;
+  font-weight: 500;
+}
+
+:root {
+  --background-secondary: rgb(200, 200, 200);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-secondary: rgb(39 39 42);
+  }
+}
+
+@import "components/Composer/LexicalComposer/styles.css";
+@import "./nprogress.css";
